@@ -44,11 +44,11 @@ const Ticketinformation = ({ route, navigation }: any) => {
          </View>
          <View style={{ padding: 15 }}>
             <Text style={{ color: 'black', fontSize: 20, fontWeight: 'bold', marginBottom: 4 }}>Thông tin chuyến</Text>
-            <Text style={{ color: 'black', fontSize: 18 }}>Tuyến                           {data.Ten}</Text>
-            <Text style={{ color: 'black', fontSize: 18 }}>Chuyến                        {data.GioDi} ngày {data.NgayDi}</Text>
-            <Text style={{ color: 'black', fontSize: 18 }}>Số ghế                          {data.soghe}</Text>
-            <Text style={{ color: 'black', fontSize: 18 }}>Chố ngồi                      {data.ChoNgoi}</Text>
-            <Text style={{ color: 'black', fontSize: 18 }}>Tổng tiền                     {data.TongTien} VND</Text>
+            <Text style={{ color: 'black', fontSize: 18 }}>Tuyến{data.Ten}</Text>
+            <Text style={{ color: 'black', fontSize: 18 }}>Chuyến{data.GioDi} ngày {data.NgayDi}</Text>
+            <Text style={{ color: 'black', fontSize: 18 }}>Số ghế{data.soghe}</Text>
+            <Text style={{ color: 'black', fontSize: 18 }}>Chố ngồi{data.ChoNgoi}</Text>
+            <Text style={{ color: 'black', fontSize: 18 }}>Tổng tiền{data.TongTien} VND</Text>
 
             <Text style={{ color: 'black', fontSize: 20, fontWeight: 'bold', marginTop: 15, marginBottom: 4 }}>Điểm đón</Text>
             <Text style={{ color: 'black', fontSize: 18 }}>{data.Diem_Bat_Dau}</Text>
@@ -59,8 +59,8 @@ const Ticketinformation = ({ route, navigation }: any) => {
             <Text style={{ color: 'black', fontSize: 18 }}>{data.Diem_Ket_Thuc}</Text>
 
             <Text style={{ color: 'black', fontSize: 20, fontWeight: 'bold', marginTop: 15, marginBottom: 4 }}>Thông tin hành khách</Text>
-            <Text style={{ color: 'black', fontSize: 18 }}>Họ và tên                      {IsNote.TenHanhKhach}</Text>
-            <Text style={{ color: 'black', fontSize: 18 }}>Số điện thoại                {IsNote.SDT}</Text>
+            <Text style={{ color: 'black', fontSize: 18 }}>Họ và tên{IsNote.TenHanhKhach}</Text>
+            <Text style={{ color: 'black', fontSize: 18 }}>Số điện thoại{IsNote.SDT}</Text>
             <Text style={{ color: 'black', fontSize: 18 }}>Email</Text>
             {checkve == 1 && 
                <TouchableOpacity onPress={() => DeletVeXe()} style={{ borderColor: '#b2b4b8', borderWidth: 1, marginTop: 25 }}><Text style={{ padding: 6, color: 'black', fontSize: 18, alignSelf: 'center' }}>Hủy vé</Text></TouchableOpacity>

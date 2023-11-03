@@ -42,7 +42,7 @@ const TripListScreens = ({ route }: any) => {
                     <IconFontisto name="date" size={20} color='white'></IconFontisto>
                 </TouchableOpacity>
                 <View>
-                    <Text style={{ color: 'white' }}>     Khởi hành</Text>
+                    <Text style={{ color: 'white' }}>Khởi hành</Text>
                     <Text style={{ color: 'white', fontSize: 17 }}> {NgayDi}</Text>
                 </View>
                 <IconFontisto name="nav-icon-list-a" size={20} color='white'></IconFontisto>
@@ -64,7 +64,7 @@ const TripListScreens = ({ route }: any) => {
                             <View style={{ padding: 10, backgroundColor: 'white', width: '92%', alignSelf: 'center', marginTop: 12, borderRadius: 20 }}>
                                 <View style={{ flexDirection: 'row', justifyContent: 'space-between', paddingVertical: 10 }}>
                                     <Text style={{ fontSize: 15, color: 'black', width: '65%' }}>Giường nằm {item.SoGheTrong} chố (có wc)</Text>
-                                    <Text style={{}}>Còn {item.SoGheTrong} chố trống</Text>
+                                    <Text style={{}}>Còn {item.SoGheTrong}Chố trống</Text>
                                 </View>
                                 <View style={{ height: 1, backgroundColor: '#C0C0C0' }}></View>
                                 <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center', marginTop: 5 }}>

@@ -148,10 +148,10 @@ const HomeScreen = ({ route, navigation }: any) => {
                 <Text style={{ fontSize: 18, fontWeight: "bold", color: "black" }}>Tin tức</Text>
                 <ScrollView horizontal>
                     <View style={{ flexDirection: 'row', marginTop: 20 }}>
-                        <TouchableOpacity>
+                    <TouchableOpacity>
                             <View style={styles.News}>
-                                <Image style={styles.ImageNews} source={require('../assets/Images/logo.png')} />
-                                <Text style={styles.NameNews}>Hệ thống phòng vé An Phú Qúy </Text>
+                                <Image style={styles.ImageNews} source={require('../assets/Images/banner1.jpg')} />
+                                <Text style={styles.NameNews}>Hệ thống nhà xe Phương Trang</Text>
                             </View>
                         </TouchableOpacity>
                     </View>
@@ -159,7 +159,7 @@ const HomeScreen = ({ route, navigation }: any) => {
                         <TouchableOpacity>
                             <View style={styles.News}>
                                 <Image style={styles.ImageNews} source={require('../assets/Images/banner1.jpg')} />
-                                <Text style={styles.NameNews}>Hệ thống phòng vé An Phú Qúy </Text>
+                                <Text style={styles.NameNews}>Hệ thống nhà xe Phương Trang</Text>
                             </View>
                         </TouchableOpacity>
                     </View>
@@ -256,7 +256,8 @@ const styles = StyleSheet.create({
         fontSize: 18,
         overflow: 'hidden',
         padding: 8,
-        color: 'black'
+        color: 'black',
+        textAlign:'center'
     },
     Icon: {
         padding: 12,

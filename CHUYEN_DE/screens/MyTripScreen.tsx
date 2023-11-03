@@ -65,10 +65,10 @@ const MyTripScreen = ({ route, navigation }: any) => {
 
                         {check == 3 ?
                             (<TouchableOpacity onPress={() => onPress(3)}>
-                                <Text style={styles.text}>Đã huy</Text>
+                                <Text style={styles.text}>Đã hủy</Text>
                             </TouchableOpacity>
                             ) : (<TouchableOpacity onPress={() => onPress(3)}>
-                                <Text style={styles.textcheck}>Đã huy</Text>
+                                <Text style={styles.textcheck}>Đã hủy</Text>
                             </TouchableOpacity>
                             )
                         }
@@ -93,7 +93,7 @@ const MyTripScreen = ({ route, navigation }: any) => {
                                                 <Text style={{ color: 'black', fontSize: 22, fontWeight: 'bold' }}>{item.BienSo}</Text>
                                                 <Text style={{ color: '#3b3938', fontSize: 18 }}>Ghế</Text>
                                                 <Text style={{ color: 'black', fontSize: 19, paddingBottom: 8 }}>{item.ChoNgoi}</Text>
-                                                <Text style={{ color: '#3b3938', fontSize: 17 }}>Lộ Trinh</Text>
+                                                <Text style={{ color: '#3b3938', fontSize: 17 }}>Lộ Trình</Text>
                                                 <Text style={{ color: 'black', fontSize: 18 }}>{item.Ten}</Text>
                                             </View>
                                         </View>

@@ -47,14 +47,14 @@ const AccountScreen = ({ navigation }: any) => {
                 <TouchableOpacity style={styles.menu} onPress={()=>login()}>
                     <View style={{ flexDirection: 'row', paddingVertical: 15 }}>
                         <Icon name="info" size={22} color="red" />
-                        <Text style={{ fontSize: 18, paddingLeft: 13 }}>đăng xuất</Text>
+                        <Text style={{ fontSize: 18, paddingLeft: 13 }}>Đăng xuất</Text>
                     </View>
                     <View>
                         <Icon name="chevron-right" size={23} color="black" />
                     </View>
                 </TouchableOpacity>
 
-                <View style={{ padding: 25 }}>
+                {/* <View style={{ padding: 25 }}>
                     <Text style={{ paddingBottom: 5, color: 'black', fontSize: 19 }}>Công ty TNHH vận tải và du lịch An Phú Qúy</Text>
                     <Text style={{ fontSize: 16 }}>Người đại diện: Lê Dũng Thái</Text>
                     <Text style={{ fontSize: 16 }}>Số ĐKKD 2901884414 do Sở KHĐT Nghệ An</Text>
@@ -67,7 +67,7 @@ const AccountScreen = ({ navigation }: any) => {
                     <Text style={{ fontSize: 16 }}>Fb : https://www.facebook.com/xekhachanphuquy</Text>
                     <Text style={{ fontSize: 16 }}>Zalo : https://zalo.me/099998888</Text>
 
-                </View>
+                </View> */}
             </ScrollView>
 
 

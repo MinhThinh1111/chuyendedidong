@@ -65,7 +65,7 @@ const BookTicket = ({ route, navigation }: any) => {
                 // axios.get('http://192.168.1.2:3000/chongoi/check/' + Id_ChuyenDi + '/' + data[index].Id).then((response) => {
                 axios.get('http://192.168.1.2:3000/chongoi/check/' + Id_ChuyenDi + '/' + data[index].Id).then((response) => {
                     if (response.data.Id != undefined) {
-                        Alert.alert('Thông báo', 'Lỗi hệ thống khi đạt vé')
+                        Alert.alert('Thông báo', 'Lỗi hệ thống khi đặt vé')
                         navigation.navigate('Home')
                     }
                 })  
@@ -118,7 +118,7 @@ const BookTicket = ({ route, navigation }: any) => {
                     }
                     axios.put('http://192.168.1.2:3000/chuyendi/updateSoGheTrong', updatechuyendi).then((response) => {    
                         // axios.put('http://192.168.1.2:3000/chuyendi/updateSoGheTrong', updatechuyendi).then((response) => {
-                        Alert.alert('Thông báo', 'Đạt Vé Thành Công')
+                        Alert.alert('Thông báo', 'Đặt Vé Thành Công')
                         navigation.navigate('MyTric')
                     })
                 });
@@ -219,12 +219,12 @@ const BookTicket = ({ route, navigation }: any) => {
             }
             <View style={{ position: 'absolute', bottom: 5, width: '100%' }}>
                 {DiemDi == '' || DiemTra == '' ?
-                    <TouchableOpacity style={{ width: '100%', height: 40, backgroundColor: '#93969e', borderRadius: 12, alignItems: 'center', alignSelf: 'center' }}>
-                        <Text style={{ color: 'white', padding: 10, fontSize: 15 }}>Đạt vé</Text>
+                    <TouchableOpacity style={{ width: '100%', height: 40,marginBottom:15, backgroundColor: '#93969e', borderRadius: 12, alignItems: 'center', alignSelf: 'center' }}>
+                        <Text style={{ color: 'white', padding: 10, fontSize: 15 }}>Đặt vé</Text>
                     </TouchableOpacity>
                     :
-                    <TouchableOpacity onPress={() => datvexe()} style={{ width: '100%', height: 40, backgroundColor: '#FF6600', borderRadius: 12, alignItems: 'center', alignSelf: 'center' }}>
-                        <Text style={{ color: 'white', padding: 10, fontSize: 15 }}>Đạt vé</Text>
+                    <TouchableOpacity onPress={() => datvexe()} style={{ width: '100%', height: 40,marginBottom:15, backgroundColor: '#FF6600', borderRadius: 12, alignItems: 'center', alignSelf: 'center' }}>
+                        <Text style={{ color: 'white', padding: 10, fontSize: 15 }}>Đặt vé</Text>
                     </TouchableOpacity>
                 }
             </View>
